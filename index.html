@@ -172,11 +172,206 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##第一章</p>
-<p>内容</p>
+        <h1 id="学习-md文档的编写"><a href="#学习-md文档的编写" class="headerlink" title="学习.md文档的编写"></a>学习.md文档的编写</h1><h2 id="一、转义"><a href="#一、转义" class="headerlink" title="一、转义"></a>一、转义</h2><p>在需要转义的符号前加反斜杠：<code>\</code>  </p>
 <hr>
-<p>##第二章</p>
-<p>内容</p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>名称</th>
+<th>转义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\</td>
+<td>反斜杠</td>
+<td><code>\\</code></td>
+</tr>
+<tr>
+<td>`</td>
+<td>反引号</td>
+<td>\`</td>
+</tr>
+<tr>
+<td>*</td>
+<td>星号</td>
+<td><code>\*</code></td>
+</tr>
+<tr>
+<td>_</td>
+<td>下划线</td>
+<td><code>\_</code></td>
+</tr>
+<tr>
+<td>{}</td>
+<td>大括号</td>
+<td><code>\{\}</code></td>
+</tr>
+<tr>
+<td>[]</td>
+<td>中括号</td>
+<td><code>\[\]</code></td>
+</tr>
+<tr>
+<td>()</td>
+<td>小括号</td>
+<td><code>\(\)</code></td>
+</tr>
+<tr>
+<td>#</td>
+<td>井号</td>
+<td><code>\#</code></td>
+</tr>
+<tr>
+<td>+</td>
+<td>加号</td>
+<td><code>\+</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td>减号</td>
+<td><code>\-</code></td>
+</tr>
+<tr>
+<td>.</td>
+<td>英文句号</td>
+<td><code>\.</code></td>
+</tr>
+<tr>
+<td>!</td>
+<td>感叹号</td>
+<td><code>\!</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="二、标题"><a href="#二、标题" class="headerlink" title="二、标题"></a>二、标题</h2><p>想要设置为标题的文字前面加<code>#</code>来表示<br>一个#是一级标题，二个#是二级标题，以此类推，支持<code>六级标题</code>。<br><code>注：标准语法一般在#后跟个空格再写文字</code> </p>
+<hr>
+<p>示例：<br><code># 一级标题</code><br><code>## 二级标题</code><br><code>### 三级标题</code><br><code>####四级级标题</code><br><code>##### 五级级标题</code><br><code>###### 六级级标题</code>  </p>
+<hr>
+<p>效果如下：  </p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级级标题"><a href="#四级级标题" class="headerlink" title="四级级标题"></a>四级级标题</h4><h5 id="五级级标题"><a href="#五级级标题" class="headerlink" title="五级级标题"></a>五级级标题</h5><h6 id="六级级标题"><a href="#六级级标题" class="headerlink" title="六级级标题"></a>六级级标题</h6><hr>
+<h2 id="三、字体"><a href="#三、字体" class="headerlink" title="三、字体"></a>三、字体</h2><p><code>加粗</code><br>要加粗的文字左右分别用<code>两个*</code>号包起来  </p>
+<p><code>斜体</code><br>要倾斜的文字左右分别用<code>一个*</code>号或者用<code>_</code>包起来  </p>
+<p><code>斜体加粗</code><br>要倾斜和加粗的文字左右分别用<code>三个*</code>号包起来  </p>
+<p><code>删除线</code><br>要加删除线的文字左右分别用<code>两个~~</code>号包起来  </p>
+<hr>
+<p>示例：<br><code>*倾斜1*</code><br><code>_倾斜2_</code><br><code>**加粗**</code><br><code>***倾斜且加粗***</code><br><code>~~删除~~</code>  </p>
+<hr>
+<p>效果如下：<br><em>倾斜1</em><br><em>倾斜2</em><br><strong>加粗</strong><br><strong><em>倾斜且加粗</em></strong><br><del>删除</del>  </p>
+<hr>
+<h2 id="四、引用"><a href="#四、引用" class="headerlink" title="四、引用"></a>四、引用</h2><p>在引用的文字前加<code>&gt;</code>即可。<br>引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;n个…  </p>
+<hr>
+<p>示例：<br><code>&gt;引用</code><br><code>&gt;&gt;引用</code><br><code>&gt;&gt;&gt;引用</code>  </p>
+<hr>
+<p>效果如下：  </p>
+<blockquote>
+<p>引用1  </p>
+<blockquote>
+<p>引用2  </p>
+<blockquote>
+<p>引用3  </p>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr>
+<h2 id="五、分割线"><a href="#五、分割线" class="headerlink" title="五、分割线"></a>五、分割线</h2><p>三个或者三个以上的<code>-</code>或者<code>*</code>都可以。</p>
+<hr>
+<p>示例：<br><code>---</code><br><code>***</code></p>
+<p>效果如下：  </p>
+<hr>
+<hr>
+<h2 id="六、图片"><a href="#六、图片" class="headerlink" title="六、图片"></a>六、图片</h2><p>语法：<br><code>![图片alt](图片地址 &quot;图片title&quot;)</code><br>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加  </p>
+<hr>
+<p>示例：<br><code>![404](404.PNG &quot;404&quot;)</code>  </p>
+<hr>
+<p>效果如下：<br><img src="404.PNG" alt="404" title="404">  </p>
+<h2 id="七、超链接"><a href="#七、超链接" class="headerlink" title="七、超链接"></a>七、超链接</h2><p>语法：</p>
+<p><code>[超链接名](超链接地址 &quot;超链接title&quot;)</code><br>title可加可不加</p>
+<hr>
+<p>示例：<br><code>[百度](http://baidu.com &quot;www.baidu.com&quot;)</code>  </p>
+<hr>
+<p>效果如下：<br><a href="http://baidu.com" target="_blank" rel="noopener" title="www.baidu.com">百度</a>  </p>
+<hr>
+<h2 id="八、列表"><a href="#八、列表" class="headerlink" title="八、列表"></a>八、列表</h2><p>无序列表<br>语法：<br>无序列表用<code>- + *</code>任何一种都可以<br><code>注意：- + * 跟内容之间都要有一个空格</code></p>
+<hr>
+<p>示例：<br><code>- 列表内容</code><br><code>+ 列表内容</code><br><code>* 列表内容</code>  </p>
+<hr>
+<p>效果如下：  </p>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<hr>
+<p>有序列表<br>语法：<br>数字加点<br><code>注意：序号跟内容之间要有空格</code>  </p>
+<hr>
+<p>示例：<br><code>1. 列表内容</code><br><code>2. 列表内容</code><br><code>3. 列表内容</code>  </p>
+<hr>
+<p>效果如下：</p>
+<ol>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ol>
+<hr>
+<p>列表嵌套<br><code>上一级和下一级之间敲三个空格即可</code>  </p>
+<p>效果如下：  </p>
+<ul>
+<li>一级无序列表内容<ul>
+<li>二级无序列表内容</li>
+</ul>
+<ul>
+<li>二级无序列表内容</li>
+</ul>
+<ul>
+<li>二级无序列表内容</li>
+</ul>
+</li>
+<li>一级无序列表内容<ol>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+</ol>
+</li>
+</ul>
+<ol>
+<li><p>一级有序列表内容</p>
+<ul>
+<li>二级无序列表内容</li>
+</ul>
+<ul>
+<li>二级无序列表内容</li>
+</ul>
+<ul>
+<li>二级无序列表内容</li>
+</ul>
+</li>
+<li><p>一级有序列表内容</p>
+<ol>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h2 id="九、表格"><a href="#九、表格" class="headerlink" title="九、表格"></a>九、表格</h2><p>语法：</p>
+<p><code>表头|表头|表头</code><br><code>---|:--:|---:</code><br><code>内容|内容|内容</code><br><code>内容|内容|内容</code><br>第二行分割表头和内容<br>-有一个就行，为了对齐，多加了几个<br>文字默认居左<br>-两边加：表示文字居中<br>-右边加：表示文字居右<br><code>注：原生的语法两边都要用 | 包起来。此处省略</code></p>
+<p>示例：</p>
+<p><code>|表头| 表头 | 表头 |</code><br><code>|-|-|-|</code><br><code>| 第一行 | 第一行 | 第一行 |</code><br><code>| 第二行 | 第二行 | 第二行 |</code><br><code>| 第三行 | 第三行 | 第三行 |</code>  </p>
+<hr>
+<p>效果如下：<br>| 表头| 表头 | 表头 |<br>|-|-|-|<br>| 第一行 | 第一行 | 第一行 |<br>| 第二行 | 第二行 | 第二行 |<br>| 第三行 | 第三行 | 第三行 |</p>
+<h2 id="十、代码"><a href="#十、代码" class="headerlink" title="十、代码"></a>十、代码</h2><p>语法：<br>单行代码：代码之间分别用一个反引号包起来</p>
+<pre><code>`代码内容`</code></pre><p>代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p>
+<pre><code>```  
+    代码内容  
+```  </code></pre><h2 id="十二、换行"><a href="#十二、换行" class="headerlink" title="十二、换行"></a>十二、换行</h2><p><code>内容末尾加上两个空格</code>  </p>
+<hr>
+<p>参考文献：<br><a href="https://www.jianshu.com/p/f378e3f2e7e1" target="_blank" rel="noopener">https://www.jianshu.com/p/f378e3f2e7e1</a><br><a href="https://www.jianshu.com/p/5158c5ac7aa6" target="_blank" rel="noopener">https://www.jianshu.com/p/5158c5ac7aa6</a><br><a href="https://github.com/IreneHanB" target="_blank" rel="noopener">https://github.com/IreneHanB</a><br><a href="https://www.cnblogs.com/irenehanb/p/10967834.html" target="_blank" rel="noopener">https://www.cnblogs.com/irenehanb/p/10967834.html</a>  </p>
 
       
 
